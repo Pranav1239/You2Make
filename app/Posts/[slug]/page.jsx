@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CardTest from "../../../assets/Test2.jpg";
 import Comments from "@/components/Comments/Comments";
 
 const getData = async (slug) => {
