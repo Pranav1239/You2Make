@@ -19,7 +19,7 @@ const fetcher = async (url) => {
 
 const Comments = ({ postSlug }) => {
   const { data, mutate, isLoading } = useSWR(
-    `http://localhost:3000/api/comments?postSlug=${postSlug}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/comments?postSlug=${postSlug}`,
     fetcher
   );
 
