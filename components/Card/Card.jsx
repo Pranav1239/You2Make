@@ -14,7 +14,7 @@ export default function Card({ key, item }) {
           <Image
             src={item.img}
             alt="Image not available"
-            width={550}
+            width={550} 
             height={300}
           />
         )}

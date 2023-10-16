@@ -1,6 +1,5 @@
 "use client";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { useRouter } from "next/navigation";
 export default function page() {
   const { status } = useSession();
   return (
@@ -22,12 +21,6 @@ export default function page() {
             className="bg-blue-600 p-3 font-bold hover:bg-blue-800 w-[20%]"
           >
             Login with Google
-          </button>
-          <button
-            onClick={() => signIn("github")}
-            className="bg-blue-600 p-3 font-bold hover:bg-blue-800 w-[20%]"
-          >
-            Login with Github
           </button>
         </div>
       )}
