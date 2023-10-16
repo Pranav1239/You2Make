@@ -1,3 +1,27 @@
+![Screenshot 2023-10-16 150912](https://github.com/Pranav1239/You2Make/assets/142288127/24f02b7d-dad4-471d-940d-be7aa26c2dae)
+
+## Building and deploying
+
+If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
+
+    npm install
+    npm run build
+    npm run dev
+
+You should run `npm run build` again any time you make changes to the site.
+
+Note: If you are already running a webserver on port 80 (e.g. Macs usually have the Apache webserver running on port 80) you can still start the example in production mode by passing a different port as an Environment Variable when starting (e.g. `PORT=3000 npm start`).
+
+## ENVS
+
+
+GOOGLE_CLIENT_ID=
+
+GOOGLE_CLIENT_SECRET=
+
+DATABASE_URL=
+
+FIREBASE_API_KEY=
 
 
 ## Learn More
