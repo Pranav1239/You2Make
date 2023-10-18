@@ -62,7 +62,7 @@ const Comments = ({ postSlug }) => {
           </div>
         </div>
       ) : (
-        <div className="mt-6 text-3xl">Sign in to leave a comment.</div>
+        <div className="mt-6 font-bold text-3xl">Sign in to leave a comment.</div>
       )}
 
       <div className="">

@@ -2,8 +2,8 @@ import Image from "next/image";
 import Comments from "@/components/Comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts/${slug}`, {
-    cache: "no-store",
+  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+    cache: "no-cache",
   });
 
   if (!res.ok) {
@@ -36,7 +36,8 @@ export default async function page({ params }) {
       </div>
       <div className="flex mt-11 mb-6 items-center">
         {
-          data?.user?.image &&   <Image
+          data?.user?.image &&   
+          <Image
           src={data.user.image}
           alt="Image not available"
           width={10}
