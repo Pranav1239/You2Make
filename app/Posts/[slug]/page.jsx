@@ -2,8 +2,8 @@ import Image from "next/image";
 import Comments from "@/components/Comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
-    cache: "no-cache",
+  const res = await fetch(`https://you2-make-pranav1239s-projects.vercel.app/api/posts/${slug}`, {
+    cache: "no-store",
   });
 
   if (!res.ok) {

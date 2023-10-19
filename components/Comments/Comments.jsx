@@ -19,7 +19,7 @@ const fetcher = async (url) => {
 
 const Comments = ({ postSlug }) => {
   const { data, mutate, isLoading } = useSWR(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/comments?postSlug=${postSlug}`,
+    `https://you2-make-pranav1239s-projects.vercel.app/api/comments?postSlug=${postSlug}`,
     fetcher
   );
 
