@@ -13,7 +13,6 @@ export default function page() {
           Logout
         </button>
         </div>
-
       ) : (
         <div className="flex justify-center items-center flex-col gap-6">
           <button

@@ -4,7 +4,7 @@ export default function loading() {
         <div className='flex justify-center items-center'>
             <h1
             className='font-extrabold text-center text-4xl'
-            >You2Make.</h1>
+            >loading....</h1>
         </div>
     </div>  
   )
