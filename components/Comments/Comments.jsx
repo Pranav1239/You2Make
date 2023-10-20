@@ -50,6 +50,7 @@ const Comments = ({ postSlug }) => {
     <div>
       {status === "authenticated" ? (
         <div className="mt-8 mb-12 lg:mt-14">
+          <form action="">
           <textarea
             placeholder="Add your comment..."
             onChange={(e) => setDesc(e.target.value)}
@@ -58,14 +59,16 @@ const Comments = ({ postSlug }) => {
           <div className="">
             <button
               onClick={handleSubmit}
+              type="submit"
               className="text-sm font-semibold absolute bg-[#4F46E5] w-fit text-white py-2 rounded px-3"
             >
               Post
             </button>
           </div>
+          </form>
         </div>
       ) : (
-        <div className="mt-6 font-bold text-3xl">Sign in to leave a comment.</div>
+        <div className="mt-6 font-bold text-red-500 text-xl">Sign in to leave a comment.</div>
       )}
 
       <div className="">

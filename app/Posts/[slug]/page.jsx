@@ -51,10 +51,10 @@ export default async function page({ params }) {
         </div>
       </div>
       <hr />
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <h1 className="text-4xl font-extrabold">Comments</h1>
       </div>
-      <Comments postSlug={slug} />
+      <Comments postSlug={slug} /> */}
     </div>
   );
 }

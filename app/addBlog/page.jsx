@@ -117,7 +117,7 @@ export default function page() {
             />
           </div>
           <select
-            className="bg-transparent block w-full p-2.5 text-white text-sm rounded-lg"
+            className="bg-transparent block w-full p-3 border-none text-white text-sm rounded-lg"
             onChange={(e) => setCatSlug(e.target.value)}
           >
             <option value="other">others</option>
@@ -152,7 +152,7 @@ export default function page() {
         </div>
         </form>
       ) : (
-        <div className="text-center text-xl font-light">
+        <div className="text-center text-xl font-extrabold text-red-600">
           Please Login or Sign in in your account
         </div>
       )}
