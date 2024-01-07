@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Comments from "@/components/Comments/Comments";
+import CommentsGet from "@/components/Comments/CommentsGet";
 
 const getData = async (slug) => {
   const res = await fetch(`https://you2-make-pranav1239s-projects.vercel.app/api/posts/${slug}`, {
@@ -23,15 +24,15 @@ export default async function page({ params }) {
           <h1 className="text-4xl font-bold mb-4">{data?.title}</h1>
           <div>
             <h1 className="text-4xl font-normal mt-3 mb-2">Summary</h1>
-            <p className="text-sm lg:text-2xl p-3">{data?.sum}</p>
+            <p className="text-sm lg:text-2xl">{data?.sum}</p>
           </div>
         </div>
         {data?.img && (
-          <Image src={data.img} alt="Image Not Found" width={600} height={400} />
+          <Image src={data.img} alt="Image Not Found" width={700} height={500} />
         )}
       </div>
       <div>
-        <h1 className="text-5xl  mt-4 font-bold mb-4">Description</h1>
+        <h1 className="text-5xl mt-6 font-bold mb-4">Description</h1>
         <p className="mt-4 text-sm lg:text-xl lg:mt-0 mb-4 lg:mb-4">{data?.desc}</p>
       </div>
       <div className="flex mt-11 mb-6 items-center">
@@ -51,10 +52,13 @@ export default async function page({ params }) {
         </div>
       </div>
       <hr />
-      {/* <div className="mt-10">
+      <div className="mt-10">
         <h1 className="text-4xl font-extrabold">Comments</h1>
       </div>
-      <Comments postSlug={slug} /> */}
+      <div className="flex flex-col gap-4">
+      <Comments postSlug={slug} />
+        <CommentsGet postSlugAll={slug}/>
+      </div>
     </div>
   );
 }

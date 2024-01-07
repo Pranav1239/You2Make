@@ -4,50 +4,50 @@ import Link from "next/link";
 const CategoriesList = async () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-evenly">
-      <Link className="hover:underline mx-1 my-1 font-medium" href={"/Blogs"}>
-        All
+      <Link className="button cursor-pointer button-gradient up" href={"/Blogs"}>
+        <p className="button-text bg-transparent">All</p>
       </Link>
       <Link
-        className="hover:underline mx-1 my-1 font-medium"
+       className="button cursor-pointer button-gradient up"
         href={"/Blogs?cat=coding"}
       >
-        Coding
+        <p className="button-text bg-transparent">Coding</p>
       </Link>
       <Link
-        className="hover:underline mx-1 my-1 font-medium"
+        className="button cursor-pointer button-gradient up"
         href={"/Blogs?cat=travel"}
       >
-        Travel
+     <p className="button-text bg-transparent">Travel</p>
       </Link>
       <Link
-        className="hover:underline mx-1 my-1 font-medium"
+        className="button cursor-pointer button-gradient up"
         href={"/Blogs?cat=food"}
       >
-        Food
+           <p className="button-text bg-transparent">Food</p>
       </Link>
       <Link
-        className="hover:underline mx-1 my-1 font-medium"
+        className="button cursor-pointer button-gradient up"
         href={"/Blogs?cat=fashion"}
       >
-        Fashion
+     <p className="button-text bg-transparent">Fashion</p>
       </Link>
       <Link
-        className="hover:underline mx-1 my-1 font-medium"
+        className="button cursor-pointer button-gradient up"
         href={"/Blogs?cat=health"}
       >
-        Health
+       <p className="button-text bg-transparent">Health</p>
       </Link>
       <Link
-        className="hover:underline mx-1 my-1 font-medium"
+        className="button cursor-pointer button-gradient up"
         href={"/Blogs?cat=events"}
       >
-        Events
+        <p className="button-text bg-transparent">Events</p>
       </Link>
       <Link
-        className="hover:underline mx-1 my-1 font-medium"
+        className="button cursor-pointer button-gradient up"
         href={"/Blogs?cat=others"}
       >
-        Others
+      <p className="button-text bg-transparent">Others</p>
       </Link>
     </div>
   );

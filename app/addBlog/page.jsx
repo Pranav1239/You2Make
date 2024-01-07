@@ -94,7 +94,7 @@ export default function page() {
         <div className="flex w-full flex-col gap-6">
           <div>
             <input
-              className=" p-2 px-4 text-sm font-bold"
+              className=" p-2 focus:outline-0 px-4 text-sm font-bold"
               type="file"
               id="image"
               onChange={(e) => setFile(e.target.files[0])}
@@ -111,7 +111,7 @@ export default function page() {
             <input
               type="text"
               placeholder="Title"
-              className="p-4 w-full focus:border-none"
+              className="p-4  focus:outline-0 w-full focus:border-none"
               onChange={(e) => setTitle(e.target.value)}
               required
             />
@@ -132,7 +132,7 @@ export default function page() {
             <br />
             <textarea
               placeholder="Summary"
-              className="p-2 w-full"
+              className="p-2 focus:outline-0 w-full"
               cols="30"
               rows="2"
               onChange={(e) => setSum(e.target.value)}
@@ -142,7 +142,7 @@ export default function page() {
           <div>
             <textarea
               placeholder="Description"
-              className="p-2 w-full"
+              className="p-2 focus:outline-0 w-full"
               cols="30"
               rows="10"
               onChange={(e) => setDes(e.target.value)}

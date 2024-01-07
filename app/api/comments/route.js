@@ -34,8 +34,15 @@ export const POST = async (req) => {
   }
   try {
     const body = await req.json();
+    const { postSlug, desc } = body;
+    console.log(desc)
+
     const comment = await prisma.comment.create({
-      data: {...(postSlug && { postSlug }), userEmail: session.user.email },
+      data: {
+        ...(postSlug && { postSlug }),
+        desc,
+        userEmail: session.user.email,
+      },
     });
 
     return new NextResponse(JSON.stringify(comment, { status: 200 }));

@@ -12,7 +12,7 @@ export default function page({ searchParams }) {
     <div className="overflow-hidden">
       <ToastContainer />
       <div className="p-2">
-        <h1 className="text-3xl lg:text-4xl font-light">
+        <h1 className="text-3xl lg:text-4xl xl:text-5xl xl:font-medium font-light">
         Welcome to You2Make, where you can effortlessly add your unique and captivating blog posts to our platform!
         </h1>
       </div>
