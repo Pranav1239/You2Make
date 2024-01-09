@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Test from "../../assets/pngegg.png";
+import Link from "next/link"
 export default function Hero() {
   return (
     <div className="overflow-hidden">
       <div className="flex text-center flex-col justify-center">
         <div>
-          <h1 className=" text-center text-2xl md:text-4xl lg:text-7xl  cursor-default">
+          <h1 className="text-center text-2xl md:text-4xl lg:text-7xl cursor-default">
             <span className="font-bold text-blue-700">You2make: </span>Share
             your thoughts with the world and discover new ideas
           </h1>
@@ -19,15 +20,15 @@ export default function Hero() {
           </div>
           <div className="w-full text-left  lg:w-[500px] text-xl flex gap-4 flex-col ">
             <h1 className="mt-8 text-xl text-center lg:text-4xl font-bold">Unleash your creativity and join the <span className="text-blue-700">conversation now!</span></h1>
-            <p c>Welcome to You2make, the digital haven for those who seek to share their insights, spark conversations, and uncover new perspectives. With a user-centric focus, this platform <span className="text-blue-700">lets you dive headfirst into the world of blogging and discussions, thanks to the vision of a single devoted developer.</span></p>
+            <p>Welcome to You2make, the digital haven for those who seek to share their insights, spark conversations, and uncover new perspectives. With a user-centric focus, this platform <span className="text-blue-700">lets you dive headfirst into the world of blogging and discussions, thanks to the vision of a single devoted developer.</span></p>
             <div className="flex flex-row justify-evenly mt-5">
-              <div className="button cursor-pointer button-gradient up">
+              <Link href={"/Blogs"} className="button cursor-pointer button-gradient up">
                 <p className="button-text bg-transparent">Visit blogs</p>
-                </div>
-              <div className="button cursor-pointer button-gradient up">
+                </Link>
+              <Link href={"https://pranav7.vercel.app/"} target="_blank" className="button cursor-pointer button-gradient up">
               <p className="button-text bg-transparent">Visit Portfolio</p>
-              </div>
-            </div>
+              </Link>
+            </div>  
           </div>
         </div>
       </div>

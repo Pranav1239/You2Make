@@ -8,7 +8,7 @@ export default function Hearder() {
     <nav className="flex justify-around p-4 items-center">
       <div>
         <Link href={"/"}>
-          <h1 className="text-xl font-extrabold cursor-default">You2Make.</h1>
+          <h1 className="text-xl lg:text-2xl font-extrabold cursor-default">You2Make.</h1>
         </Link>
       </div>
       <div className="flex flex-row">

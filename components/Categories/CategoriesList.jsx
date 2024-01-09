@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CategoriesList = async () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-evenly">
+    <div className="flex  flex-wrap lg:flex-row justify-center items-center lg:justify-evenly">
       <Link className="button cursor-pointer button-gradient up" href={"/Blogs"}>
         <p className="button-text bg-transparent">All</p>
       </Link>
